@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/star_wars_dark"
+    tools:context=".CharacterActivity">
+
+    <!-- Character Image -->
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/darth_vader"
+        app:layout_constraintBottom_toTopOf="@+id/characterName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Character Name -->
+    <TextView
+        android:id="@+id/characterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Darth Vader"
+        android:textColor="@color/star_wars_yellow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/characterAffiliation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterImage" />
+
+    <!-- Affiliation -->
+    <TextView
+        android:id="@+id/characterAffiliation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sith Lord"
+        android:textColor="@color/star_wars_red"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/characterBio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterName" />
+
+    <!-- Character Bio -->
+    <TextView
+        android:id="@+id/characterBio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Once a heroic Jedi Knight, Anakin Skywalker was seduced by the dark side of the Force, becoming Darth Vader. Father of Luke Skywalker and Leia Organa."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterAffiliation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
