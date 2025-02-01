@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY NOTES"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Notes List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Note 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="#FF6B6B"
+                android:text="For my ally is the Force, and a powerful ally it is..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:cornerRadius="16dp"/>
+
+            <!-- Note 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="#48CAE4"
+                android:text="You were the Chosen One! It was said that you would destroy the Sith..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:cornerRadius="16dp"/>
+
+            <!-- Note 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="#90EE90"
+                android:text="You were the Chosen One! It was said that you would destroy the Sith..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:cornerRadius="16dp"/>
+
+            <!-- Note 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="#FFD700"
+                android:text="For my ally is the Force, and a powerful ally it is..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:cornerRadius="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Add Note Button -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_add"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home"
+            android:background="@null"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_list"
+            android:background="@null"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add"
+            android:background="@null"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_bell"
+            android:background="@null"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_settings"
+            android:background="@null"/>
+    </LinearLayout>
+</LinearLayout>
