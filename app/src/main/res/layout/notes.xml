@@ -55,19 +55,20 @@
                 android:cornerRadius="16dp"/>
 
             <!-- Note 3 -->
+
+            <!-- Note 4 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
                 android:background="#90EE90"
+                android:cornerRadius="16dp"
+                android:gravity="center_vertical"
+                android:marginBottom="8dp"
+                android:padding="12dp"
                 android:text="You were the Chosen One! It was said that you would destroy the Sith..."
                 android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:marginBottom="8dp"
-                android:gravity="center_vertical"
-                android:cornerRadius="16dp"/>
+                android:textSize="14sp" />
 
-            <!-- Note 4 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
