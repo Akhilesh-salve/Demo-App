@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     android:padding="16dp">
 
-    <!-- Title of the page  -->
+    <!-- Title  -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"/>
 
-    <!-- Notes List on the pages  -->
+    <!-- Notes List  -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
